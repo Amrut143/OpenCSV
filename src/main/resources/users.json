@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Rajeev kumar Singh",
+    "email": "rajeev@example.com",
+    "phoneNo": "+9999999908",
+    "country": "India"
+  },
+  {
+    "name": "Sachin Tendulkar",
+    "email": "sachin@example.com",
+    "phoneNo": "+9999999907",
+    "country": "India"
+  }
+]

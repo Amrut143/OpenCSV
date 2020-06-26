@@ -1,8 +1,12 @@
-package com.bridgelabz.opencsv;
+package com.bridgelabz.opencsv.service;
 
+/**
+ * @Author : Amrut
+ * Purpose : Write data into csv file
+ */
+
+import com.bridgelabz.opencsv.model.CSVUser;
 import com.opencsv.CSVWriter;
-import com.opencsv.bean.CsvToBean;
-import com.opencsv.bean.CsvToBeanBuilder;
 import com.opencsv.bean.StatefulBeanToCsv;
 import com.opencsv.bean.StatefulBeanToCsvBuilder;
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
@@ -17,8 +21,13 @@ import java.util.List;
 
 public class OpenCSVWriter {
 
-    private static final String OBJECT_WRITE_FILE_PATH = "./Object-List-Sample.csv";
+    private static final String OBJECT_WRITE_FILE_PATH = "D:/FellowshipProgram/OpenCSV/src/main/resources/Object-List-Sample.csv";
 
+    /**
+     *
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
         try (
                 Writer writer = Files.newBufferedWriter(Paths.get(OBJECT_WRITE_FILE_PATH));

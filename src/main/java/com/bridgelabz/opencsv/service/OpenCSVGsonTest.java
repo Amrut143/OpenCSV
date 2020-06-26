@@ -1,5 +1,11 @@
-package com.bridgelabz.opencsv;
+package com.bridgelabz.opencsv.service;
 
+/**
+ * @Author : Amrut
+ * Purpose : Read data from csv file and write into json
+ */
+
+import com.bridgelabz.opencsv.model.CSVUser;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.opencsv.bean.CsvToBean;
@@ -10,10 +16,14 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class OpenCSVGsonTester {
-    private static final String SAMPLE_CSV_FILE_PATH = "./Object-List-Sample.csv";
-    private static final String SAMPLE_JSON_FILE_PATH = "./user.json";
+public class OpenCSVGsonTest {
+    private static final String SAMPLE_CSV_FILE_PATH = "D:/FellowshipProgram/OpenCSV/src/main/resources/users.csv";
+    private static final String SAMPLE_JSON_FILE_PATH = "D:/FellowshipProgram/OpenCSV/src/main/resources/users.json";
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println(SAMPLE_CSV_FILE_PATH);
         try {
